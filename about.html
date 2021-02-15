@@ -38,7 +38,7 @@
 		body {
 			margin: 0;
 			padding: 0;
-			overflow: hidden;
+			overflow: auto;
 			height: 100%; 
 			max-width: 100%;
 			max-height: auto; 
@@ -50,17 +50,14 @@
             background-position:center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-			background-size:cover;	
-			
+			background-size:cover;
             }
-		div {
-  			overflow-y: scroll;
-			}
        
 	    .responsive {
 			position: fixed;
 			bottom:0;
-			max-width: 60vw;
+			max-height: 80%;
+			max-width: 60%;
 			height:auto;
         	opacity: 0.75;
 			vertical-align: middle;
@@ -71,7 +68,7 @@
 			top: 50;
 			left: 0; 
 			right: 0;
-			overflow-y: auto; 
+			overflow-y: scroll; 
 		}
 	
 		.innertube {
@@ -79,22 +76,22 @@
 		}
 
 		.content {
-			padding-top: 130px;
-			vertical-align: middle;
-			overflow-y: scroll;
-			height: 400px;
+			width: 40%;
+			height:400px;
+			margin-left: 55%;
+			margin-top: 22%;
+			overflow: scroll;
 			font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
 		}	
-	
-		.p1 {
-			position: fixed;
-			margin-right: 5%;
-			margin-left: 55%;
-			text-align: justify;
+		div.p1 {
 			-webkit-overflow-scrolling: touch;
+  			overflow-y: scroll;
+			}
+
+		.p1 {
+			text-align: justify;
 			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
-			color: #964f38;
-			overflow-y: auto;
+			color: #794230;
 			font-size: calc(12px + 6 * ((100vw - 320px) / 680));
   }
 @media screen and (min-width: 1000px) {
