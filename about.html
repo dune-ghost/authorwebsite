@@ -51,41 +51,50 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
 			background-size:cover;	
+			
             }
-
-            .responsive {
-  			width: 40%;
-  			min-width: 200px;
-            display: block, left;
-            margin-right: auto;
-            border-radius: 12px;
-            opacity: 0.8;
-            padding-bottom: 20px;
-        }    
-
+		div {
+  			overflow-y: scroll;
+			}
+       
+	    .responsive {
+			position: fixed;
+			bottom:0;
+			max-width: 60vw;
+			height:auto;
+        	opacity: 0.75;
+			vertical-align: middle;
+		}
+		
 		main {
 			position: fixed;
-			bottom: 50px; 
 			top: 50;
 			left: 0; 
 			right: 0;
-			overflow: auto; 
+			overflow-y: auto; 
 		}
+	
 		.innertube {
 			margin: 1px; /* Provides padding for the content */
 		}
 
 		.content {
-			padding-top: 100px;
+			padding-top: 130px;
+			vertical-align: middle;
+			overflow-y: scroll;
+			height: 400px;
 			font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
-			text-align: center;
-			
 		}	
 	
 		.p1 {
-			padding-top: 2em;
+			position: fixed;
+			margin-right: 5%;
+			margin-left: 55%;
+			text-align: justify;
+			-webkit-overflow-scrolling: touch;
 			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
 			color: #964f38;
+			overflow-y: auto;
 			font-size: calc(12px + 6 * ((100vw - 320px) / 680));
   }
 @media screen and (min-width: 1000px) {
@@ -93,11 +102,6 @@
     font-size: 14px;
   }
 }
-					
-		/*IE6 fix*/
-		* html body{
-			padding: 20px; /* Set the third value to the height of the header */
-		}
 		
 		* html main{ 
 			height: 100%; 
@@ -114,6 +118,7 @@
     font-size: 16px;
   }
 }
+
 		</style>
 
 	</head>
@@ -129,12 +134,17 @@
 					  <a href="publications">publications</a>
 					  <a href="contact">contact</a>	
 		</header>
+		<main>
 		<div class="content">
-			<p class="p1"> All the news that's fit to print</p> 
+			<p class="p1"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
 		</div> 
-		<div>
-            <img src= "author.jpeg" class="responsive" style="max-width:100%;height:auto;">
+		<div style="width:30vw">
+            <img src= "author.jpeg" class=responsive>
         </div>
-		
+	</main>
 	</body>
 </html>
+
+
+
+  
