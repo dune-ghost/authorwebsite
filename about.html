@@ -10,7 +10,8 @@
 		<style type="text/css">
 		#header, #footer, #top-nav { margin:0; padding:0;}
 
-		#logo { padding:10; top: 0px; float:left;max-width: 100%; height: auto}
+		#logo { padding:10; top: 3px; float:left;max-width: 100%; height: auto;z-index: 100;
+			position: relative;}
 		#header {padding:0; height: auto; max-width: 100%}
 			#logo h1 a, h1 a:hover
 			#logo h1 span
@@ -21,7 +22,7 @@
 
 			.top-nav a {
   			float: left;
- 			color: #AD7460;
+ 			color: rgb(202, 108, 74);
   			text-align: center;
   			padding: 14px 16px;
 			max-height: auto;
@@ -92,7 +93,7 @@
 		.p1 {
 			text-align: justify;
 			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
-			color: #793030;
+			color: rgb(170, 47, 47);
 			font-size: calc(12px + 6 * ((100vw - 320px) / 680));
 			-webkit-overflow-scrolling: touch;
   			overflow-y: scroll;
@@ -127,7 +128,7 @@
 		<header>
 			<div id="header-inner">	
 				<div id="logo">
-					<img src="name.png" alt="Analeah Loschiavo" style="max-width:60%;max-height:auto;" padding=0/>
+					<a href= "index.html"> <img src="name.png" alt="Analeah Loschiavo" style="max-width:60%;max-height:auto;" padding=0/></a> 
 				</div>
 				<div class="top-nav" style="max-width:100%;max-height:auto;">
 					  <a href="about.html">about</a>
@@ -136,12 +137,13 @@
 		</header>
 		<main>
 		<div class="content">
-			<p class="p1"> Analeah Loschiavo is a Brazilian-American writer living in Chicago by way of Miami. She received her MFA in Fiction from Washington University in St Louis in 2019. In 2019, she also received a Fulbright Student Research Award to complete a collection of short stories in Lisbon, Portugal. She has received Disquiet International’s Luso-American Fellowship Award (finalist, 2018) and Bread Loaf’s Katharine Bakeless Nason Scholarship Award (2018). On the side, she has worked as a nuclear waste researcher, archivist, bookseller, and AI chatbot developer.</p> 
+			<p class="p1"> Analeah Loschiavo is a Brazilian-American writer living in Chicago by way of Miami. She received her MFA in Fiction from Washington University in St Louis in 2019. In 2019, she also received a Fulbright Student Research Award to complete a collection of short stories in Lisbon, Portugal. She has received Disquiet International’s Luso-American Fellowship Award (finalist, 2018) and Bread Loaf’s Katharine Bakeless Nason Scholarship Award (2018). She also held a two-year research position with a Mellon Sawyer group, “Grounding the Ecocritical: Materializing Wastelands and Living on in the Middle East," where she focused on nuclear waste and Native American architecture. On the side, she has worked as an archivist, bookseller, and AI chatbot writer.</p> 
 		</div> 
 		<div style="width:30vw">
-            <img src= "author.jpeg" class=responsive>
-        </div>
-	</main>
+			<img src= "author.jpeg" class=responsive>
+		</div>
+
+		</main>
 	</body>
 </html>
 
